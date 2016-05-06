@@ -61,7 +61,7 @@ module Paperclip
 
       if watermark_path
         command = "composite"
-        puts "#{@position}"
+        puts "Le position: #{@position}"
         params = %W[-gravity #{@position} #{watermark_path} #{tofile(dst)}]
         params << tofile(dst)
         begin
